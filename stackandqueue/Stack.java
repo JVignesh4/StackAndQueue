@@ -5,6 +5,7 @@ import com.blz.linkedlist.LinkList;
 import com.blz.linkedlist.MyNode;
 
 public class Stack<K> {
+
     private final LinkList stackLinkedList;
 
     public Stack() {
@@ -17,8 +18,33 @@ public class Stack<K> {
     }
 
 
+    public INode peek() {
+        return stackLinkedList.head;
+    }
+
+
+    public INode pop() {
+        return stackLinkedList.head;
+    }
+
+
+    public boolean isEmpty() {
+        if(stackLinkedList.head != null) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+
+    public int size() {
+        return stackLinkedList.hashCode();
+    }
+
+
     public void printStack() {
         stackLinkedList.display();
     }
-
 }
+

@@ -4,6 +4,7 @@ import com.blz.linkedlist.MyNode;
 
 public class StackMain {
     public static void main(String[] args) {
+
         System.out.println("----- Welcome To Data Structure : Stack -----");
 
         Stack stackList = new Stack();
@@ -14,7 +15,14 @@ public class StackMain {
         stackList.push(secondNode);
         stackList.push(thirdNode);
         stackList.printStack();
+        System.out.println("Top element of stack: "+stackList.peek().getKey());
+        System.out.println("Size of the stack is: "+stackList.size());
+        System.out.println("Stack after repeated popping : ");
+        while(!stackList.isEmpty()) {
+            stackList.pop();
+            break;
+        }
+        stackList.printStack();
 
     }
-
 }
