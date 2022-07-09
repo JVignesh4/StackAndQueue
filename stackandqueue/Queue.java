@@ -11,7 +11,23 @@ public class Queue<K> {
     public void enqueue(INode element) {
         queueLinkedList.append((MyNode) element);
     }
+    public INode dequeue() {
+        return queueLinkedList.head;
+    }
 
+
+    public boolean isEmpty() {
+        if(queueLinkedList.head != null) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    public int size() {
+        return queueLinkedList.hashCode();
+    }
 
     public void printQueue() {
         queueLinkedList.display();
